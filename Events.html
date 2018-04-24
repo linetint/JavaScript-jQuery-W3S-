@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<p id="demo"></p>
+<script>
+
+let a=Date();
+console.log(a);
+
+let b=new Date();
+console.log(b);
+console.log(b.getDate());
+console.log(b.getHours());
+console.log(b.getMinutes());
+
+
+document.getElementById('demo').innerHTML="일:"+b.getDate()+", 시간:"+b.getHours()+", 분:"+b.getMinutes();
+
+
+function myfunc() {
+
+  return Date();
+
+}
+
+
+
+
+</script>
+
+
+<!-- <button onclick="this.innerHTML=Date()">버튼</button> -->
+
+<button onclick="this.innerHTML=myfunc()">버튼2</button>
+
+
+  </body>
+</html>

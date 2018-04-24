@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script>
+
+let carname="volvo";
+
+// 함수내에서 선언한 변수 carname2는 함수밖에서 사용할수 없다
+function myFunction(){
+  let carname2="sonata";
+}
+
+function myFunction2(){
+  carname3="sonata2";
+}
+
+myFunction();
+myFunction2();
+
+console.log(carname);
+// console.log(carname2); //오류뜸
+console.log(carname3);
+
+
+
+let color1="red";
+
+function myColor(){
+  let color2="blue";
+  return color2;
+}
+
+let color2="green";
+
+// myColor();
+
+console.log(color1);
+console.log(myColor());
+console.log(color2);
+
+let animal="cat";
+
+console.log(window.animal);
+console.log(animal);
+
+
+
+
+
+
+
+
+</script>
+  </body>
+</html>
