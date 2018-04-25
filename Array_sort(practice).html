@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+
+    button{
+      font-size:50px;
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <p id="demo"></p>
+    <button id="sort_btn" onclick="sort_btn()">sort</button>
+    <button id="reverse_btn" onclick="reverse_btn()">reverse</button>
+
+
+<script>
+
+var numbers = [1,2,11,4,27,3,15,21,5,42,70,51,81,100,92,85];
+
+// var sort_btn=function (){
+//   console.log("sort");
+//   var up=numbers.sort(function(a,b){return a-b});
+//   // console.log(up);
+//   document.getElementById('demo').innerHTML=up;
+// }
+
+// 위에처럼 함수를 변수에 담아서 써도 되고 밑에처럼 해도 된다
+function sort_btn(){
+  console.log("sort");
+  var up=numbers.sort(function(a,b){return a-b});
+  // console.log(up);
+  document.getElementById('demo').innerHTML=up;
+}
+
+
+
+var reverse_btn=function (){
+  console.log("reverse");
+  var down=numbers.sort(function(a,b){return b-a});
+  // console.log(down);
+  document.getElementById('demo').innerHTML=down;
+
+}
+
+
+// var up=numbers.sort(function(a,b){return a-b});
+// console.log(up);
+//
+// var down=numbers.sort(function(a,b){return b-a});
+// console.log(down);
+
+
+
+
+
+</script>
+  </body>
+</html>

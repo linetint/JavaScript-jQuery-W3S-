@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script>
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+console.log(fruits);
+
+fruits.push("Lemon");
+
+console.log(fruits);
+
+
+fruits[6]="Grape";
+console.log(fruits);
+
+
+// 둘다 똑같이 배열을 만들지만 point1방식보다는 point2방식이 더 좋은 방식이다
+// new키워드는 코드를 복잡하게 만들고 오류를 발생시킬수 있다
+var point1=new Array(40, 100, 1, 5, 25, 10);
+var point2=[40, 100, 1, 5, 25, 10];
+
+console.log(point1);
+console.log(point2);
+
+console.log(typeof point1);
+console.log(typeof point2);
+
+
+
+
+
+
+</script>
+  </body>
+</html>

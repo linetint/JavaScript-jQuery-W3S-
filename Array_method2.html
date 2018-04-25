@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script>
+
+var Girls=["Kelly", "Lone"];
+var Boys=["Tom", "Sam", "Johnson"];
+
+// concat은 배열과 배열을 합칠때 사용한다
+// Girls배열에 Boys배열을 합친다
+var Children=Girls.concat(Boys);
+console.log(Children);
+
+
+var arr1=["A","B"];
+var arr2=["C","D","E"];
+var arr3=["F","G"];
+
+
+var arr4=arr1.concat(arr2, arr3);
+console.log(arr4);
+
+
+
+var list1=["red","blue"];
+
+// var list2=list1.concat("green","white","black");
+var list2=list1.concat(["green","white","black"]);
+console.log(list2);
+
+
+var cut=list2.slice(1,3);
+console.log(cut);
+
+
+
+
+
+
+</script>
+  </body>
+</html>

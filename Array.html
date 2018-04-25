@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<p id="demo"></p>
+<script>
+
+var cars=new Array("Saab", "Volvo", "BMW");
+
+console.log(cars);
+console.log(cars[0]);
+console.log(cars[1]);
+console.log(cars[2]);
+
+// 배열을 변경할수도 있다
+cars[0]="Opel";
+console.log(cars[0]);
+
+console.log(cars);
+console.log(cars.length);
+
+
+// document.getElementById('demo').innerHTML=cars;
+
+for(var i=0; i<cars.length; i++){
+
+  document.write(cars[i]+"<br />");
+
+}
+
+
+// var person={firstName:"John", lastName:"Doe", age:25};
+//
+// console.log(person);
+// console.log(person.length);
+// console.log(person.firstName);
+// console.log(person.lastName);
+// console.log(person.age);
+
+
+
+
+
+</script>
+
+  </body>
+</html>
