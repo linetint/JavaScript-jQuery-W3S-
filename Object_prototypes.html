@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+
+
+    function Person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+    }
+    Person.nationality = "English";
+
+    var myFather = new Person("John", "Doe", 50, "blue");
+    var myMother = new Person("Sally", "Rally", 48, "green");
+
+    console.log(myFather);
+    console.log(myMother);
+
+
+    Person.prototype.nation="USA";
+
+    console.log(myFather);
+    console.log(myMother);
+
+    console.log(myFather.nation);
+    console.log(myMother.nation);
+    console.log(Person.nation);
+    console.log(Person.prototype.nation);
+
+    Person.prototype.nation="Korea";
+
+    console.log(myFather.nation);
+    console.log(myMother.nation);
+    console.log(Person.nation);
+    console.log(Person.prototype.nation);
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
