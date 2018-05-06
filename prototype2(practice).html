@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+//자바스크립트에서 prototype을 통해서 상속을 제공한다
+    
+    
+    
+    
+
+    function Color1(){
+        
+    }
+    
+    Color1.prototype.list1="red";
+    
+    
+    function Color2(){
+        
+    }
+    
+    Color2.prototype.list2="blue";
+    
+    
+    
+    function RedColor(){
+        
+    }
+    
+    RedColor.prototype=new Color1();
+    
+    
+    function BlueColor(){
+        
+    }
+    
+    BlueColor.prototype=new Color2();
+    
+
+
+    
+    
+
+    var c1=new RedColor();
+
+    var c2=new BlueColor();
+    
+
+    console.log(c1);
+    console.log(c1.list1);
+    
+    console.log(c2);
+    console.log(c2.list2);
+
+
+
+
+
+
+
+//    console.log(Color1);
+//    console.log(Color1.prototype);
+//    
+//    console.log(Color2);
+//    console.log(Color2.prototype);
+
+//    console.log(c1);
+//    console.log(c2);
+
+    
+    
+    
+
+
+</script>
+
+</body>
+
+</html>

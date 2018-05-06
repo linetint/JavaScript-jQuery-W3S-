@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script>
+
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+    this.changeName=function(name){
+      this.lastName=name;
+    }
+}
+
+
+
+
+
+var myFather=new Person("John","Doe",50,"blue");
+var myMother=new Person("Sally","Rally",48,"green");
+
+
+console.log(myFather);
+console.log(myMother);
+
+myMother.changeName("Avril");
+// console.log(myMother.changeName("Avril"));
+
+console.log(myMother);
+
+
+
+
+
+
+</script>
+  </body>
+</html>
