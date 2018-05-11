@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script>
+
+var x=function(a,b){
+  return a*b;
+}
+
+var z=x(4,3);
+
+console.log(z);
+
+
+
+function myFunction(a,b){
+  return a+b;
+}
+
+var abc=myFunction(4,3);
+
+console.log(abc);
+
+
+// arguments에는 함수에 전달한 인자에 대한 정보가 들어있음
+function myFunction2(a,b){
+  return arguments.length;
+}
+
+var efg=myFunction2(5,6,5,4,3,2);
+
+console.log(efg);
+
+
+function myFunction3(a, b) {
+    return a * b;
+}
+
+
+var txt=myFunction3.toString();
+
+console.log(txt);
+
+
+
+
+
+
+</script>
+  </body>
+</html>
