@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.3.1.js"></script>
+  </head>
+  <body>
+    <p>paragraph</p>
+    <div id="id_selector">paragraph2</div>
+    <div class="class_selector">paragraph3</div>
+
+
+    <script>
+
+$(function(){
+
+
+
+
+$('p').click(function(){
+  $(this).hide();
+})
+
+$('#id_selector').click(function(){
+  $(this).fadeOut();
+})
+
+$('.class_selector').click(function(){
+  $(this).fadeOut();
+})
+
+
+
+
+
+
+
+
+});
+
+
+    </script>
+
+  </body>
+</html>

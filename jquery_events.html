@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.3.1.js"></script>
+  </head>
+  <body>
+
+<p class="user1">user1</p>
+<p class="user2">user2</p>
+<p class="user3">user3</p>
+<p class="user4">user4</p>
+<p class="user5">user5</p>
+<p class="user6">user6</p>
+
+<hr />
+<hr />
+<hr />
+
+<input type="text" />
+<input type="text" />
+<script>
+
+$(function(){
+
+
+
+// click:클릭하면
+$('.user1').click(function(){
+  $(this).fadeOut();
+});
+
+
+// dblclick:더블 클릭하면
+$('.user2').dblclick(function(){
+  $(this).fadeOut();
+});
+
+
+// mouseenter:마우스를 올리면
+$('.user3').mouseenter(function(){
+  $(this).fadeOut();
+});
+
+
+// mouseleave:마우스를 떼면
+$('.user4').mouseleave(function(){
+  $(this).fadeOut();
+});
+
+
+
+// mousedown:마우스의 왼쪽,오른쪽,가운데버튼을 누르면
+$('.user5').mousedown(function(){
+  $(this).fadeOut();
+});
+
+
+// hover:마우스를 올리면
+$('.user6').hover(function(){
+  $(this).fadeOut();
+});
+
+
+// focus는 input태그같이 입력양식에 포커스(마우스 커서가 올려져 있는 상태)가 되어있을때고
+// blur는 그 포커싱된게 사라졌을때를 말한다
+// $('input').focus(function(){
+//   $(this).css('background-color','gray');
+// });
+//
+// $('input').blur(function(){
+//   $(this).css('background-color','white');
+// });
+
+
+// 위의 코드를 on메소드를 통해서 이렇게 한번에 묶어서 줄수도 있다
+$('input').on({
+
+  focus:function(){
+    $(this).css('background-color','gray');
+  },
+
+  blur:function(){
+    $(this).css('background-color','white');
+  }
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+
+</script>
+  </body>
+</html>
